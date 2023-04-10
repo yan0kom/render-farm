@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "application.rf-back.url",
+  "type": "java.lang.String",
+  "description": "URL of the render farm backend"
+}]}

@@ -1,0 +1,8 @@
+server:
+  port: 8088
+  servlet:
+    encoding:
+      force-response: true
+  tomcat:
+    threads:
+      max: 3

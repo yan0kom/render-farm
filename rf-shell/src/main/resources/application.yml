@@ -1,0 +1,10 @@
+spring:
+  main:
+    web-application-type: NONE
+  output:
+    ansi:
+      enabled: always 
+
+application:
+  rf-back:
+    url: http://localhost:8088
