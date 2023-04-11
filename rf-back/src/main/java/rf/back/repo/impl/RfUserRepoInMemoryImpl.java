@@ -7,8 +7,6 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.stream.Stream;
 
-import javax.annotation.PostConstruct;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -30,11 +28,6 @@ class RfUserRepoInMemoryImpl implements RfUserRepo {
 
 	public RfUserRepoInMemoryImpl(RfUserTokenStorage rfUserTokenStorage) {
 		this.rfUserTokenStorage = rfUserTokenStorage;
-	}
-
-	@PostConstruct
-	public void init() {
-		add(new RfUser("admin", "$2a$10$TJRmH8GZNCMN5YO0LWX1GO4X1EAce3ntTpXoLYVZEetkHayjMxk5i", "ADMIN", null));
 	}
 
 	@Override

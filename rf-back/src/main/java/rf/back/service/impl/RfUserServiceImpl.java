@@ -2,6 +2,8 @@ package rf.back.service.impl;
 
 import java.util.stream.Stream;
 
+import javax.annotation.PostConstruct;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -29,6 +31,11 @@ class RfUserServiceImpl implements RfUserService {
 		this.rfUserRepo = rfUserRepo;
 		this.rfUserTokenStorage = rfUserTokenStorage;
 		this.passwordEncoder = passwordEncoder;
+	}
+
+	@PostConstruct
+	public void init() {
+		signUp(new RfUser("system", "system", "ADMIN", null));
 	}
 
 	@Override

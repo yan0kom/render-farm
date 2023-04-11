@@ -1,6 +1,9 @@
 package rf.back.service.impl;
 
+import java.util.Map;
 import java.util.stream.Stream;
+
+import javax.annotation.PostConstruct;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +21,13 @@ class RfTaskServiceImpl implements RfTaskService {
 
 	public RfTaskServiceImpl(RfTaskRepo rfTaskRepo) {
 		this.rfTaskRepo = rfTaskRepo;
+	}
+
+	@PostConstruct
+	public void init() {
+		var task = rfTaskRepo.add(new RfTask(0, "sleep", "sleep ${duration}",
+				Map.of("duration", "for example: 39s, 2m")));
+		log.info("Task created: {}", task);
 	}
 
 	@Override
