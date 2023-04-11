@@ -32,4 +32,9 @@ public class RfUser {
 	public RfUser withToken(String value) {
 		return new RfUser(username, password, role, value);
 	}
+
+	@Override
+	public String toString() {
+		return "[username=" + username + ", role=" + role + "]";
+	}
 }
