@@ -1,12 +1,8 @@
 package rf.api.dto.tasks;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-
 import rf.api.dto.BaseOutDto;
+
+import java.util.*;
 
 public class TasksOutDto extends BaseOutDto {
 	private final List<TasksOutDto.Task> tasks = new ArrayList<>();
@@ -24,30 +20,49 @@ public class TasksOutDto extends BaseOutDto {
 	}
 
 	public static class Task {
-		private final Long id;
-		private final String name;
-		private final String command;
+		private long id;
+		private String name;
+		private String command;
 		/** key - parameter name, value - description */
-		private final Map<String, String> params;
+		private Map<String, String> params;
 
-		public Task(Long id, String name, String command, Map<String, String> params) {
+		public Task(long id, String name, String command, Map<String, String> params) {
 			this.id = id;
 			this.name = name;
 			this.command = command;
 			this.params = Collections.unmodifiableMap(new LinkedHashMap<>(params));
 		}
 
+		public Task() {
+			this(0, null, null, null);
+		}
+
 		public Long getId() {
 			return id;
 		}
+		public void setId(long id) {
+			this.id = id;
+		}
+
 		public String getName() {
 			return name;
 		}
+		public void setName(String name) {
+			this.name = name;
+		}
+
 		public String getCommand() {
 			return command;
 		}
+		public void setCommand(String command) {
+			this.command = command;
+		}
+
 		public Map<String, String> getParams() {
 			return params;
+		}
+		public void setParams(Map<String, String> params) {
+			this.params = params;
 		}
 	}
 }
