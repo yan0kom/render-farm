@@ -1,6 +1,17 @@
+# maven
 .mvn/wrapper/maven-wrapper.jar
 target/
 
+# eclipse
 .settings/
 .project
 .classpath
+
+# idea
+.idea/
+
+# vscode
+.vscode/
+
+# local files
+*.log
