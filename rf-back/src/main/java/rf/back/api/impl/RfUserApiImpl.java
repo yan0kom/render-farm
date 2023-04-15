@@ -2,15 +2,9 @@ package rf.back.api.impl;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
-
 import rf.api.RfUserApi;
 import rf.api.dto.BaseOutDto;
-import rf.api.dto.users.DeleteInDto;
-import rf.api.dto.users.SignInInDto;
-import rf.api.dto.users.SignInOutDto;
-import rf.api.dto.users.SignUpInDto;
-import rf.api.dto.users.SignUpOutDto;
-import rf.api.dto.users.UsersOutDto;
+import rf.api.dto.users.*;
 import rf.domain.entity.RfUser;
 import rf.domain.service.RfUserService;
 
@@ -40,7 +34,7 @@ class RfUserApiImpl implements RfUserApi {
     public ResponseEntity<SignInOutDto> signIn(SignInInDto dto) {
         var rfUser = new RfUser(dto.getUsername(), dto.getPassword(), null, null);
         rfUser = rfUserService.signIn(rfUser);
-        return ResponseEntity.ok(new SignInOutDto(rfUser.getToken(), rfUser.getRole()));
+        return ResponseEntity.ok(new SignInOutDto(rfUser.getUsername(), rfUser.getRole(), rfUser.getToken()));
     }
 
     @Override
