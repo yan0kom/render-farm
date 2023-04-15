@@ -1,6 +1,7 @@
 server:
   port: 8088
   servlet:
+    contextPath: /api
     encoding:
       force-response: true
   tomcat:

@@ -7,4 +7,5 @@ spring:
 
 application:
   rf-back:
+    url: http://localhost:8088/api
     url: http://localhost:8088

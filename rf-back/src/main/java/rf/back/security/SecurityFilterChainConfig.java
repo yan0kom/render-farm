@@ -33,8 +33,8 @@ class SecurityFilterChainConfig {
                 .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .exceptionHandling(eh -> eh.authenticationEntryPoint(exceptionAep))
                 .authorizeHttpRequests(auth -> auth
-                		.antMatchers(HttpMethod.POST, "/api/users/sign-up").permitAll()
-                		.antMatchers(HttpMethod.POST, "/api/users/sign-in").permitAll()
+                		.antMatchers(HttpMethod.POST, "/users/sign-up").permitAll()
+                		.antMatchers(HttpMethod.POST, "/users/sign-in").permitAll()
                 		.anyRequest().authenticated())
                 .addFilterBefore(rfTokenAuthFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
