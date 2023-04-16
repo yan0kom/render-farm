@@ -3,6 +3,7 @@ module rf.domain {
 
 	exports rf.domain.entity;
 	exports rf.domain.entity.enums;
+	exports rf.domain.exception;
 	exports rf.domain.repo;
 	exports rf.domain.service;
 }

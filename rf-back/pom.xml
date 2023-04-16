@@ -66,8 +66,19 @@
 		</plugins>
 	</build>
 
-	<dependencyManagement>
-		<dependencies>
-		</dependencies>
-	</dependencyManagement>
+	<profiles>
+		<profile>
+			<id>storage-hashmap</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<dependencies>
+				<dependency>
+					<groupId>render-farm</groupId>
+					<artifactId>rf-storage-hashmap</artifactId>
+					<version>1.0</version>
+				</dependency>
+			</dependencies>
+		</profile>
+	</profiles>
 </project>

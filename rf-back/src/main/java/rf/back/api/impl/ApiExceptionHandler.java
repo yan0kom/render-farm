@@ -1,7 +1,5 @@
 package rf.back.api.impl;
 
-import java.util.stream.Collectors;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,11 +10,12 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
-
 import rf.api.dto.ErrorOutDto;
-import rf.back.exception.EntityNotFoundException;
-import rf.back.exception.NonUniqueIdException;
-import rf.back.exception.NonUniqueUsernameException;
+import rf.domain.exception.EntityNotFoundException;
+import rf.domain.exception.NonUniqueIdException;
+import rf.domain.exception.NonUniqueUsernameException;
+
+import java.util.stream.Collectors;
 
 @RestControllerAdvice("rf.back.api")
 class ApiExceptionHandler extends ResponseEntityExceptionHandler {
