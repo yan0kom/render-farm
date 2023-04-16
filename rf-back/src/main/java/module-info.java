@@ -22,7 +22,6 @@ module rf.back {
 
 	opens rf.back to spring.core;
 	opens rf.back.api.impl to spring.core, spring.web;
-	opens rf.back.repo.impl to spring.core;
 	opens rf.back.security to spring.core;
 	opens rf.back.service.impl to spring.core;
 }

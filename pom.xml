@@ -14,9 +14,10 @@
 
     <modules>
         <module>rf-api</module>
-        <module>rf-back</module>        
+        <module>rf-back</module>
         <module>rf-domain</module>
         <module>rf-shell</module>
+        <module>rf-storage-hashmap</module>
     </modules>
 
 </project>
