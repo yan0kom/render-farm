@@ -1,11 +1,27 @@
 spring:
   main:
-    web-application-type: NONE
+    banner-mode: off
   output:
     ansi:
-      enabled: always 
+      enabled: always
+  shell:
+    history:
+      name: rf-shell-history.log
 
+feign:
+  httpclient:
+    hc5:
+      enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 10000
+        readTimeout: 300000
+        loggerLevel: basic
+        requestInterceptors:
+          - rf.shell.config.TokenAuthRequestInterceptor
+
+## rf-shell settings    
 application:
   rf-back:
     url: http://localhost:8088/api
-    url: http://localhost:8088

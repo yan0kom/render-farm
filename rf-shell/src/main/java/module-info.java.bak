@@ -1,0 +1,29 @@
+module rf.shell {
+	requires rf.api;
+	requires rf.spring.shell.assembly;
+
+	requires spring.beans;
+	requires spring.boot;
+	requires spring.boot.autoconfigure;
+	requires spring.cloud.openfeign.core;
+	requires spring.context;
+	requires spring.core;
+
+	requires com.fasterxml.jackson.core;
+	requires com.fasterxml.jackson.databind;
+	requires feign.core;
+	requires feign.hc5;
+	requires lombok;
+	requires org.jline;
+	requires org.slf4j;
+
+	exports rf.shell to spring.beans, spring.context;
+	exports rf.shell.client to spring.beans, spring.context;
+	exports rf.shell.components to spring.beans, spring.context;
+	exports rf.shell.config to spring.beans, spring.context;
+
+	opens rf.shell.client to spring.core;
+	opens rf.shell to spring.core;
+	opens rf.shell.components to spring.core;
+	opens rf.shell.config to spring.core;
+}

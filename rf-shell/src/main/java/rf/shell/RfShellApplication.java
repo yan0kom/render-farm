@@ -1,35 +1,24 @@
 package rf.shell;
 
-import java.util.List;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.jline.utils.AttributedString;
+import org.jline.utils.AttributedStyle;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.context.annotation.Bean;
+import org.springframework.shell.jline.PromptProvider;
 
-@SpringBootApplication
-@EnableFeignClients
+@SpringBootApplication(scanBasePackages = {"rf.shell"})
+@EnableFeignClients("rf.shell.client")
 public class RfShellApplication {
 
-	private static Logger log = LoggerFactory.getLogger(RfShellApplication.class);
-
-	private List<String> args;
-
 	public static void main(String[] args) {
-		log.info("STARTING THE APPLICATION");
-		SpringApplication.run(RfShellApplication.class, args);
-		log.info("APPLICATION FINISHED");
+		System.out.println("Starting rf-shell...");
+		SpringApplication.run(RfShellApplication.class);
 	}
 
-	public void run(String... argsArray) {
-		log.info("EXECUTING : command line runner");
-
-		for (int i = 0; i < argsArray.length; ++i) {
-			log.info("args[{}]: {}", i, argsArray[i]);
-		}
-
-		args = List.of(argsArray);
-
+	@Bean
+	public PromptProvider myPromptProvider() {
+		return () -> new AttributedString("rf-shell: ", AttributedStyle.DEFAULT.foreground(AttributedStyle.YELLOW));
 	}
 }
