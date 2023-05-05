@@ -414,7 +414,7 @@ vars.put(&quot;password&quot;, &quot;${userPass_1}&quot;)</stringProp>
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-2001295601">Test render-farm REST API</stringProp>
-              <stringProp name="1693005365">sign-in new</stringProp>
+              <stringProp name="2088215349">sign-in</stringProp>
             </collectionProp>
           </ModuleController>
           <hashTree/>
@@ -515,7 +515,7 @@ vars.put(&quot;password&quot;, &quot;${userPass_1}&quot;)</stringProp>
               <collectionProp name="ModuleController.node_path">
                 <stringProp name="764597751">Test Plan</stringProp>
                 <stringProp name="-2001295601">Test render-farm REST API</stringProp>
-                <stringProp name="-2045689410">sign-out new</stringProp>
+                <stringProp name="310172478">sign-out</stringProp>
               </collectionProp>
             </ModuleController>
             <hashTree/>
@@ -665,7 +665,7 @@ vars.put(&quot;password&quot;, &quot;${userPass_1}&quot;)</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">3</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">0</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -898,7 +898,7 @@ vars.put(&quot;password&quot;, &quot;${userPass_1}&quot;)</stringProp>
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-2001295601">Test render-farm REST API</stringProp>
-              <stringProp name="1693005365">sign-in new</stringProp>
+              <stringProp name="2088215349">sign-in</stringProp>
             </collectionProp>
           </ModuleController>
           <hashTree/>
@@ -997,7 +997,7 @@ vars.put(&quot;password&quot;, &quot;${userPass_1}&quot;)</stringProp>
               <collectionProp name="ModuleController.node_path">
                 <stringProp name="764597751">Test Plan</stringProp>
                 <stringProp name="-2001295601">Test render-farm REST API</stringProp>
-                <stringProp name="-2045689410">sign-out new</stringProp>
+                <stringProp name="310172478">sign-out</stringProp>
               </collectionProp>
             </ModuleController>
             <hashTree/>
@@ -1147,7 +1147,7 @@ vars.put(&quot;password&quot;, &quot;${userPass_1}&quot;)</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">3</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">0</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -1274,7 +1274,7 @@ vars.put(&quot;password&quot;, &quot;${userPass_1}&quot;)</stringProp>
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-2001295601">Test render-farm REST API</stringProp>
-              <stringProp name="1693005365">sign-in new</stringProp>
+              <stringProp name="2088215349">sign-in</stringProp>
             </collectionProp>
           </ModuleController>
           <hashTree/>
@@ -1293,7 +1293,7 @@ vars.put(&quot;password&quot;, &quot;${userPass_1}&quot;)</stringProp>
               <collectionProp name="ModuleController.node_path">
                 <stringProp name="764597751">Test Plan</stringProp>
                 <stringProp name="-2001295601">Test render-farm REST API</stringProp>
-                <stringProp name="-2045689410">sign-out new</stringProp>
+                <stringProp name="310172478">sign-out</stringProp>
               </collectionProp>
             </ModuleController>
             <hashTree/>
@@ -1314,7 +1314,7 @@ vars.put(&quot;password&quot;, &quot;${adminPass_1}&quot;)</stringProp>
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-2001295601">Test render-farm REST API</stringProp>
-              <stringProp name="1693005365">sign-in new</stringProp>
+              <stringProp name="2088215349">sign-in</stringProp>
             </collectionProp>
           </ModuleController>
           <hashTree/>
@@ -1333,7 +1333,7 @@ vars.put(&quot;password&quot;, &quot;${adminPass_1}&quot;)</stringProp>
               <collectionProp name="ModuleController.node_path">
                 <stringProp name="764597751">Test Plan</stringProp>
                 <stringProp name="-2001295601">Test render-farm REST API</stringProp>
-                <stringProp name="-2045689410">sign-out new</stringProp>
+                <stringProp name="310172478">sign-out</stringProp>
               </collectionProp>
             </ModuleController>
             <hashTree/>
@@ -1383,7 +1383,7 @@ vars.put(&quot;password&quot;, &quot;${adminPass_1}&quot;)</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">3</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">0</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -1447,7 +1447,7 @@ vars.put(&quot;password&quot;, &quot;get-users-pass-${__threadNum}&quot;)</strin
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-2001295601">Test render-farm REST API</stringProp>
-              <stringProp name="1693005365">sign-in new</stringProp>
+              <stringProp name="2088215349">sign-in</stringProp>
             </collectionProp>
           </ModuleController>
           <hashTree/>
@@ -1496,7 +1496,7 @@ vars.put(&quot;password&quot;, &quot;get-users-pass-${__threadNum}&quot;)</strin
               <collectionProp name="ModuleController.node_path">
                 <stringProp name="764597751">Test Plan</stringProp>
                 <stringProp name="-2001295601">Test render-farm REST API</stringProp>
-                <stringProp name="-2045689410">sign-out new</stringProp>
+                <stringProp name="310172478">sign-out</stringProp>
               </collectionProp>
             </ModuleController>
             <hashTree/>
@@ -1595,7 +1595,7 @@ vars.put(&quot;password&quot;, &quot;get-users-pass-${__threadNum}&quot;)</strin
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">3</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">0</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -1659,7 +1659,7 @@ vars.put(&quot;password&quot;, &quot;get-tasks-pass-${__threadNum}&quot;)</strin
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-2001295601">Test render-farm REST API</stringProp>
-              <stringProp name="1693005365">sign-in new</stringProp>
+              <stringProp name="2088215349">sign-in</stringProp>
             </collectionProp>
           </ModuleController>
           <hashTree/>
@@ -1922,7 +1922,7 @@ vars.put(&quot;password&quot;, &quot;${userPass_1}&quot;)</stringProp>
             <collectionProp name="ModuleController.node_path">
               <stringProp name="764597751">Test Plan</stringProp>
               <stringProp name="-2001295601">Test render-farm REST API</stringProp>
-              <stringProp name="1693005365">sign-in new</stringProp>
+              <stringProp name="2088215349">sign-in</stringProp>
             </collectionProp>
           </ModuleController>
           <hashTree/>
@@ -2019,7 +2019,7 @@ vars.put(&quot;password&quot;, &quot;${userPass_1}&quot;)</stringProp>
               <collectionProp name="ModuleController.node_path">
                 <stringProp name="764597751">Test Plan</stringProp>
                 <stringProp name="-2001295601">Test render-farm REST API</stringProp>
-                <stringProp name="-2045689410">sign-out new</stringProp>
+                <stringProp name="310172478">sign-out</stringProp>
               </collectionProp>
             </ModuleController>
             <hashTree/>
